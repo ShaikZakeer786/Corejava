@@ -24,6 +24,11 @@ public class AtmWithdraw {
 
         } catch (InsufficientBalanceException e) {
             System.out.println("Balance Error: " + e.getMessage());
+            
+        }finally {
+        	
+            sc.close();
         }
+
     }
 }

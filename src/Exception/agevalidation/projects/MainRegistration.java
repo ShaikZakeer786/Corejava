@@ -32,6 +32,10 @@ public class MainRegistration {
         } catch (InvalidEmailException e) {
             System.out.println("Email Error: " + e.getMessage());
 
+        }finally {
+            
+            sc.close();
         }
+
     }
 }
